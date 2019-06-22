@@ -1,14 +1,66 @@
+.left-panel {
+    width: 164px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: rgba(0,0,0,.2);
+}
+.listTitle {
+    display: block;
+    float: none;
+    margin: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(255,255,255,.4);
+}
+.list {
+        display: block;
+    float: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: baseline;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+.slider{
+    position:absolute;
+    padding-top: 20px;
+  padding-left: 300px;
+  
+}
+.oferta{
+    
+    margin-top: -270px;
+ padding-left: 1000px;
+   padding-bottom: 0px;
+}
+.mySlides {
+    
+    display:none;
+}
+body{
+    background-color: #002055;
+}
 #menu{
-    display: flex;
-    justify-content: flex-end;
+    
     width: 100%;
     padding: 5px 10px;
     height: 50px;
-    background-color: #002055;
+    background-color: #001536;
 }
-section{
-    float:right;
-}
+
 
 ul {
   list-style-type: none;
