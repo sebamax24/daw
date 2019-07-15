@@ -1,28 +1,101 @@
 <html>
 <head>
-<link rel="stylesheet" href="css/css.css"></head>
-    <body>
- <p></p>
- <p></p>
- <p></p>
- <p></p>
-        <header>
-  
-            <nav id="menu">
+<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
             <ul>
+                <li><a href=”#”>Juegos</a></li>
+                <li><a href=”#”>Subscripción Premium</a></li>
+                <li><a href=”#”>Ofertas Semanales</a></li>
+                <li id="ini"><a href=”#”>Iniciar Sesión</a></li>
+                <li><a href=”#”>Cadastrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider">
+        <img class="mySlides" width="950px" height="300px" src="assets/cod.jpg">
+        <img class="mySlides" width="950px" height="300px" src="assets/fifa.jpg">
+        <img class="mySlides" width="950px" height="300px" src="assets/skyrim.jpg">
+        <img class="mySlides" width="950px" height="300px" src="assets/border.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <section class="oferta">
+            <img src="assets/oferta.jpg">    
+        </section>
+    </section>
+    <section class="left-panel">
+        <h2 class="listTitle">Em destaque</h2>
+        <ul class="list">
+            <a>Novidades da Semana</a>
+            <p></p>
+            <a>Novidades do Mês</a>
+            <p></p>
+            <a>Em breve</a>
+            <p></p>
+            <a>Todas As Promoções</a>
+        </ul>
+        <h2 class="listTitle">Jogos</h2>
+        <ul class="list">
+            <a>Todos os jogos</a>
+            <p></p>
+            <a>Free-to-Play</a>
+            <p></p>
+            <a>Últimas Edições</a>
+            <p></p>
+            <a>Pacotes</a>
+            <p></p>
+        </ul>
+    </section>
+    <div class="grid-cell">
+        <div class="grid-cell__thumbnail">
+            <div style="background-image: url('/img/default/product-image-game.svg'); width: 124px; height: 124px;">
+                <img src="/img/default/product-image-game.svg" onerror="this.style.display='none'">
+                 <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=124&amp;h=124&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" srcset="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=186&amp;h=186&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000 1.5x, https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=248&amp;h=248&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000 2x, https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=372&amp;h=372&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000 3x, https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=496&amp;h=496&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000 4x" onload="this.classList.add('product-image__img-main--show');" class="product-image__img product-image__img--product product-image__img-main product-image__img-main--show">
+            </div>
+            <div class="product-image__discount-badge">
+            </div>
+        </div>
+            <div class="grid-cell__body">
+                <div  class="grid-cell__title ">
+                    <span title="Red Dead Redemption 2">Red Dead Redemption 2</span>
+                </div>
+                <div class="grid-cell__bottom">
+                    Jogo completo
+                    PS4
+                    <span>
+                        <h3>R$248,99</h3>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <button>
+                    <i aria-hidden="true"></i>
+                </button>
+        </div>
+    </div>
 
- <li><a href=”#”>Juegos</a></li>
- <li><a href=”#”>Subscripcionón Premium</a></li>
- <li><a href=”#”>Ofertas Semanales</a></li>
 
- </ul>
-                </nav>
-        </header>
-        <section>
- 
-            </section>
-<footer>    
-    <p>2019/1</p>
-</footer>
+   
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script> 
 </body>
 </html>

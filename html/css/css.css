@@ -1,14 +1,66 @@
+.left-panel {
+    width: 164px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: rgba(0,0,0,.2);
+}
+.listTitle {
+    display: block;
+    float: none;
+    margin: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(255,255,255,.4);
+}
+.list {
+        display: block;
+    float: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: baseline;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+.slider{
+    position:absolute;
+    padding-top: 20px;
+  padding-left: 300px;
+  
+}
+.oferta{
+    
+    margin-top: -320px;
+ padding-left: 1100px;
+   padding-bottom: 0px;
+}
+.mySlides {
+    
+    display:none;
+}
+body{
+    background-color: #002055;
+}
 #menu{
-    display: flex;
-    justify-content: flex-end;
+    
     width: 100%;
     padding: 5px 10px;
     height: 50px;
-    background-color: #002055;
+    background-color: #001536;
 }
-section{
-    float:right;
-}
+
 
 ul {
   list-style-type: none;
@@ -28,4 +80,72 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#ini{
+    margin-left: 900px;
+}
+
+.grid-cell {
+    position: relative;
+    width: 7.75rem;
+    height: 16.5rem;
+    display: block;
+    outline: transparent solid 4px;
+    color: #fefefe;
+    transition: all .5s ease;
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+}
+
+a {
+    background-color: transparent;
+    
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.grid-cell__thumbnail {
+    width: 7.75rem;
+    height: 7.75rem;
+}
+
+
+
+element.style {
+    background-image: url(/img/default/product-image-game.svg);
+    width: 124px;
+    height: 124px;
+}
+
+.grid-cell__title {
+    padding: .4375rem .4375rem 0;
+    height: 3.5rem;
+    display: block;
+    display: -webkit-box;
+    display: -ms-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+   
+}
+
+.grid-cell__bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.grid-cell__body {
+    position: relative;
+    height: 8.75rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    background-color: #262b34;
+}
+
+.product-image__discount-badge {
+    position: absolute;
+    bottom: .5em;
+    z-index: 2;
 }
