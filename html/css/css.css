@@ -78,13 +78,19 @@ li a {
 }
 
 #ini{
-
     margin-left: 50%;
 }
 
 .juegos {
-
-    margin-left: 900px;
+    position: relative;
+    width: 7.75rem;
+    height: 16.5rem;
+    display: block;
+    outline: transparent solid 4px;
+    color: #fefefe;
+    transition: all .5s ease;
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
 }
 
 a {
@@ -100,13 +106,6 @@ a {
     height: 7.75rem;
 }
 
-
-
-element.style {
-    background-image: url(/img/default/product-image-game.svg);
-    width: 124px;
-    height: 124px;
-}
 
 
 .title {
@@ -127,7 +126,6 @@ element.style {
     width: 100%;
     bottom: 0;
 }
-
 
 .body {
     position: relative;
