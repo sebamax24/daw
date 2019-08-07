@@ -47,6 +47,7 @@
 }
 body{
     background-color: #002055;
+	margin: 0px;
 }
 #menu{
     
@@ -176,12 +177,110 @@ a {
 
 
 footer{
-    text-align: center;
-     margin-top: 15%;
+   color:grey;
+   margin-top: 15%;
    margin-bottom: 0%;
-    background-color: #001536;
-    width: 100%;
-    height: 20%;
-    font-size: 0.5em;
+   background-color: black;
+   width: 100%;
+   height: 40%;
 
 }
+#footer_h{
+	color:white;
+}
+#conta{
+	margin-left: 20%;
+	padding-top: 0.5%;
+}
+#legal{
+	margin-left: 40%;
+	margin-top: -5%;
+}
+#contacto{
+	margin-left: 60%;
+	margin-top: -15%;
+}
+.snei-column-sen {
+	
+    background: #3c3c3c;
+    width: 40%;
+	height: 60%;
+    padding: 30px 2.45098%;
+    margin-right: 0;
+   
+}
+* {
+	box-sizing: border-box;
+}
+
+form {
+	width: 200px;
+	height: 40px;
+	margin: 100px auto 0;
+	margin-right: 10%;
+}
+
+
+#submit {
+	display: none;	
+}
+
+form .icon, form .submit {
+	width: 35px;
+	height: 35px;
+	background: #d75813;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow:
+		0px 5px #bc490a,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .submit {
+	background: #009bff;
+	cursor: pointer;
+	box-shadow:
+		0px 5px #0276c1,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
+form .icon:after, form .submit:after  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+	border-radius: 50%;
+	left: 10px;
+	top: 9px;
+}
+
+form .icon:before, form .submit:before {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 2px;
+	background: white;
+	transform: rotate(-35deg);
+	top: 19px;
+	left: 21px;
+}
+
+/* Styling the input */
+form #search {
+	-webkit-appearance: none;
+	height: 35px;
+	width: 0;
+	position: absolute;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 35px;
+	box-shadow:
+}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}

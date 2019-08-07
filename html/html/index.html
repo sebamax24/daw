@@ -1,6 +1,10 @@
 <html>
 <head>
 
+<script type="text/javascript" src="funciones.js"></script>
+<style>
+
+</style>
 <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
@@ -10,18 +14,32 @@
                 <li><a href=”#”>Juegos</a></li>
                 <li><a href=”#”>Subscripción Premium</a></li>
                 <li><a href=”#”>Ofertas Semanales</a></li>
-                <li id="ini"><a href=login.html>Iniciar Sesión</a></li>
+				<li id="ini"><a href=login.html>Iniciar Sesión</a></li>
                 <li><a href=cadastro.html>Cadastrarse</a></li>
-            </ul>
+				<form action="" class="search">
+	<input id="submit" value="" type="submit">
+	<label for="submit" class="submit"></label>
+	
+	
+	<a href="javascript: void(0)" class="icon"></a>
+	<input type="search" name="Search" id="search" placeholder="Search">
+</form>
+			</ul>
         </nav>
     </header>
-    <section class="slider">
-        <img class="mySlides" width="950px" height="300px" src="assets/cod.jpg">
-        <img class="mySlides" width="950px" height="300px" src="assets/fifa.jpg">
-        <img class="mySlides" width="950px" height="300px" src="assets/skyrim.jpg">
-        <img class="mySlides" width="950px" height="300px" src="assets/border.jpg">
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    
+	<section class="slider">
+		<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides w3-animate-right" width="1000px" height="300px" src="assets/cod.jpg">
+        <img class="mySlides w3-animate-right" width="1000px" height="300px" src="assets/fifa.jpg">
+        <img class="mySlides w3-animate-right" width="1000px" height="300px" src="assets/skyrim.jpg">
+        <img class="mySlides w3-animate-right" width="1000px" height="300px" src="assets/border.jpg">
+ 
+   
+  </div>
+</div>
+        
+       
     </section>
     <section class="left-panel">
         <h2 class="listTitle">Em destaque</h2>
@@ -169,29 +187,57 @@
     
     
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+var myIndex = 0;
+carousel();
 
-
-function showDivs(n) {
+function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
 }
-</script> 
-    
+</script>
 <footer>
-    <p>Prova de Recursos multimidias</p>
-    <p>2019/1</p>
+	<section id="conta">
+    <h3 id="footer_h">CONTA</h3>
+    <p>Gerenciar conta</p>
+	</section>
+	<section id="legal">
+	<h3 id="footer_h">LEGAL</h3>
+	<p>Termos de serviço</p>
+	<p>Licenças de código aberto</p>
+	<p>Política de privacidade</p>
+	<p>Avisos sobre saúde</p>
+	<p>Entre em contato</p>
+	<p>Mais ...</p>
+	</section>
+	<section id="contacto">
+	<div class="snei-column-sen">  
+		<ul class="snei-list">  
+		<li> <a href="https://www.playstationnetwork.com/pt-br/about-us/" target="_blank">
+		Sobre nós
+		</a>
+		</li>  
+		<li> <a href="http://suporte.br.playstation.com/" target="_blank">Suporte</a> 
+		</li>
+		</ul>  
+		<div class="snei-social">  
+		<a href="#" title="Twitter"> 
+		<img src="https://logosmarcas.com/wp-content/uploads/2018/05/Twitter-logo.png" width="15%" height="15%">
+		
+		</a>   
+		<a href="#" title="Facebook"> 
+		<img src="https://image.flaticon.com/icons/svg/733/733547.svg" width="15%" height="15%">
+		</a> 
+		</a>   <a href="#" title="YouTube" class="snei-social-youtube" target="_blank"> 
+		<img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-8.png" width="30%" height="15%"></a>  </div>  </div>
+	</section>
 </footer>
 </body>
 </html>
