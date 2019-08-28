@@ -56,10 +56,7 @@ body{
    
     margin: 0px;
 }
-tr, td{
-    color:black;
-    border-color: white;
-}
+
 .efecto
 {
 	
@@ -70,4 +67,43 @@ tr, td{
 	-moz-filter: opacity(0.2) drop-shadow(0 0 0 white);
 	-webkit-filter: opacity(0.2) drop-shadow(0 0 0 white);
 	filter: opacity(0.2) drop-shadow(0 0 0 white);
+}
+
+#main-container{
+	margin: 20px auto;
+	width: 100%;
+	
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	
+}
+
+th, td{
+	padding: 20px;
+    border-color: black;
+
+}
+#preto{
+   color: white;
+}
+thead{
+	background-color:black;
+	
+    
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+    
+}
+
+
+tr:hover td{
+	background-color: #002055;
+	color: white;
 }
