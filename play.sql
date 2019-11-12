@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-11-2019 a las 03:23:56
+-- Tiempo de generación: 13-11-2019 a las 00:52:42
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -41,7 +41,7 @@ CREATE TABLE `juego` (
 --
 
 INSERT INTO `juego` (`id`, `precio`, `descripcion`, `nombre`, `img`) VALUES
-(4, 12, 'sas', 'seba', 'Penguins.jpg');
+(4, 72, 'sadsad', 'death stranding', 'death_stranding_1_0.jpg');
 
 -- --------------------------------------------------------
 
@@ -60,7 +60,7 @@ CREATE TABLE `oferta` (
 --
 
 INSERT INTO `oferta` (`id`, `oferta`, `img`) VALUES
-(7, 'sasasa', 'Jellyfish.jpg');
+(7, 'Metade do Ano', 'summer.png');
 
 -- --------------------------------------------------------
 
@@ -125,7 +125,7 @@ ALTER TABLE `oferta`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

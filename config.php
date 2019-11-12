@@ -1,11 +1,11 @@
-<?php
+﻿<?php
 
 //Simple MVC Configuration File
 //Inicialização da variável $config
 unset($config);
 $config = new stdClass();
 $config->defaultClass = "Home";
-$config->base_url = '/daw/';
+$config->base_url = '/daw2019/';
 $config->url = 'http://'.$_SERVER['HTTP_HOST']. $config->base_url;
 $config->asset = $config->base_url . 'view/templates/';
 $config->template = 'default';
