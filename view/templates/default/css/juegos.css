@@ -1,0 +1,157 @@
+.sku-info {
+    background-color: #262b34;
+    padding: 10px 13px;
+    width: 17%;
+}
+.sku-info__price-display {
+    font-size: 30px;
+}
+.pdp__left-content {
+    padding: 0;
+    height: 8.75rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    background-color: #012e81;
+    
+
+}
+.playable-on__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color:white;
+}
+.pdp__thumbnail-img {
+    font-size: 1.5em;
+    width: 240px;
+    height: 240px;
+}
+hr {
+    box-sizing: content-box;
+    max-width: 75rem;
+    height: 0;
+    margin: 1.25rem auto;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+}
+.sku-info__divider {
+    border-color: #000;
+    padding-bottom: 0;
+    margin-bottom: 7px;
+}
+.content-rating {
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 10px 6px;
+    margin-top: 17px;
+    background: rgba(255,255,255,.05);
+    min-height: 66px;
+    overflow: hidden;
+}
+
+.tech-specs {
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 10px 13px;
+    margin-top: 17px;
+    background: rgba(255,255,255,.05);
+    min-height: 66px;
+    overflow: hidden;
+
+}
+.slider{
+    position: relative;
+    padding-top: 17%;
+  padding-left: 20%;
+  
+}
+#juego{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: -40%;
+    color:white;
+    width: 86%;
+
+}
+
+#fondo{
+    background: rgba(0,0,0,.6);
+    margin-top: 2%;
+    margin-left:8%;
+    width: 90%;
+    height: 120%;
+}
+.pdp__title {
+    margin: 20px 0 0;
+    font-size: 40px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+.provider-info__text {
+    font-size: 20px;
+    color:white;
+}
+.provider-info__list-item:not(:first-of-type):before {
+    display: inline-block;
+    content: "|";
+    padding: 0 7px;
+}
+.provider-info__list-item:not(:first-of-type):before {
+    display: inline-block;
+    content: "|";
+    padding: 0 7px;
+}
+.provider-info__rating-count {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#titulooo{
+   position: absolute;  
+    margin-top: 2%;
+  margin-left: 28%;
+}
+
+.pdp__description {
+    margin-top: 10px;
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+}
+.pdp, h4 {
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+dl, ol, p, ul {
+    margin-bottom: 1rem;
+}
+#descrip{
+    color:white;
+    margin-top: -18%;
+    margin-left: 28%;
+    position: absolute; 
+}
+hr{
+    width: 214%;
+}
+
+
+.button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+

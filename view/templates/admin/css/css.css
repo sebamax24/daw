@@ -1,0 +1,291 @@
+.left-panel {
+    width: 164px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: rgba(0,0,0,.2);
+}
+.listTitle {
+    display: block;
+    float: none;
+    margin: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(255,255,255,.4);
+}
+.list {
+        display: block;
+    float: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: baseline;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+.slider{
+    position:absolute;
+    padding-top: 2%;
+  padding-left: 18%;
+  
+}
+
+.mySlides {
+    
+    display:none;
+}
+body{
+    background-color: #002055;
+	margin: 0px;
+}
+#menu{
+    
+    width: 100%;
+    padding: 5px 10px;
+    height: 50px;
+    background-color: #001536;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#ini{
+    margin-left: 50%;
+}
+
+.juegos {
+    position: relative;
+    width: 7.75rem;
+    height: 16.5rem;
+    display: block;
+    outline: transparent solid 4px;
+    color: #fefefe;
+    transition: all .5s ease;
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+}
+
+a {
+    background-color: transparent;
+    
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.juego {
+    width: 7.75rem;
+    height: 7.75rem;
+}
+
+
+
+.title {
+    padding: .4375rem .4375rem 0;
+    height: 3.5rem;
+    display: block;
+    display: -webkit-box;
+    display: -ms-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+   
+}
+
+
+.precio {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.body {
+    position: relative;
+    height: 8.75rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    background-color: #262b34;
+}
+
+.product-image__discount-badge {
+    position: absolute;
+    bottom: .5em;
+    z-index: 2;
+}
+
+#imagen1{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+
+#imagen2{
+    position: absolute;
+    margin-left: 32%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+#imagen3{
+    position: absolute;
+    margin-left: 44%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+#imagen4{
+    position: absolute;
+    margin-left: 56%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+#imagen5{
+    position: absolute;
+    margin-left: 68%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+
+
+
+footer{
+   color:grey;
+   margin-top: 15%;
+   margin-bottom: 0%;
+   background-color: black;
+   width: 100%;
+   height: 40%;
+   
+
+}
+#footer_h{
+	color:white;
+    padding-top: -15%;
+     line-height: 0.5;
+}
+#conta{
+	margin-left: 20%;
+	padding-top: 0.5%;
+}
+#legal{
+	margin-left: 40%;
+	margin-top: -5%;
+}
+#contacto{
+	margin-left: 60%;
+	margin-top: -15%;
+}
+.snei-column-sen {
+	
+    background: #3c3c3c;
+    width: 40%;
+	height: 60%;
+    padding: 30px 2.45098%;
+    margin-right: 0;
+   
+}
+* {
+	box-sizing: border-box;
+}
+
+form {
+	width: 200px;
+	height: 40px;
+	margin: 100px auto 0;
+	margin-right: 10%;
+}
+
+
+#submit {
+	display: none;	
+}
+
+form .icon, form .submit {
+	width: 35px;
+	height: 35px;
+	background: #d75813;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow:
+		0px 5px #bc490a,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .submit {
+	background: #009bff;
+	cursor: pointer;
+	box-shadow:
+		0px 5px #0276c1,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
+form .icon:after, form .submit:after  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+	border-radius: 50%;
+	left: 10px;
+	top: 9px;
+}
+
+form .icon:before, form .submit:before {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 2px;
+	background: white;
+	transform: rotate(-35deg);
+	top: 19px;
+	left: 21px;
+}
+
+/* Styling the input */
+form #search {
+	-webkit-appearance: none;
+	height: 35px;
+	width: 0;
+	position: absolute;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 35px;
+	box-shadow:
+}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+
