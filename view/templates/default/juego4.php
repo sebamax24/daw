@@ -16,7 +16,7 @@
                 <li><a href=”#”>Ofertas Semanales</a></li>
 				<li id="ini"><a href="<?php echo $this->base_url ?>Admin">Iniciar Sesión</a></li>
 				<li> <a href="<?php echo $this->base_url ?>carrito"><i class='icon-shopping-cart'></i></a></li>
-                <li><a href=>Cadastrarse</a></li>
+               <li><a href="<?php echo $this->base_url ?>cadastro">Cadastrarse</a></li>
 				<form action="" class="search">
 	<input id="submit" value="" type="submit">
 	<label for="submit" class="submit"></label>
@@ -29,12 +29,12 @@
         </nav>
     </header>
     <section id="titulooo">
-    <h2 class="pdp__title" style="direction:ltr">RESIDENT EVIL 2</h2>
+    <h2 class="pdp__title" style="direction:ltr">Metro Exodus</h2>
     <div class="provider-info">
-        <h5 class="provider-info__text" style="direction:ltr">Capcom U.S.A., Inc.</h5>
+        <h5 class="provider-info__text" style="direction:ltr">Deep Silver</h5>
       <h5 class="provider-info__text">
           <span class="provider-info__list-item" style="direction:ltr">Jogo completo</span>
-          <span class="provider-info__list-item">Lançamento 25 jan 2019</span>
+          <span class="provider-info__list-item">Lançamento 26 oct 2018</span>
             <span class="provider-info__list-item">
             
                 <i class="icon-star"></i>
@@ -47,24 +47,27 @@
               </div>
               <div class="provider-info__rating">
               <div class="provider-info__rating-count">
-                6497 Classificações
+                38279 Classificações
               </div>
+            </div>
             </span>
+                
       </h5>
       <hr>
-      <p>&nbsp;</p>
-     
+      <p>
+     </div>
+     </section>
 
 
-    </div>
-  </section>
+    
+  
     <div id="fondo">
     <section class="slider">
       <div class="w3-content w3-display-container" style="max-width:800px">
-          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re1.jpg">
-          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re2.jpg">
-          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re3.jpg">
-          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re4.jpg">
+          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/exo1.jpg">
+          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/exo2.jpg">
+          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/exo3.jpg">
+          <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/exo4.jpg">
    
      
     </div>
@@ -78,7 +81,7 @@
     <div class="large-3">
             <div class="pdp__thumbnail-img">
             <div>
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP0102-CUSA09193_00-BH2R000000000001/1566433618000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000" >
+                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/UY/es/19/UP2047-CUSA11408_00-METROEXODUS00000/1574956948000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000" >
                   </div>
                   
                   <div class="product-image__discount-badge">
@@ -94,24 +97,39 @@
                             
                   
                 
-                              <div id="ember1172" class="ember-view">  <div id="ember1181" class="ember-view"><div id="ember1190" class="__shared-presentation__cta-games__base__950b4 ember-view"><!---->
-                  <button data-fastboot-event-queue="add-to-cart" class="button expanded desktop-cta desktop-cta--add-to-cart desktop-cta--vertical-stack" data-ember-action="" data-ember-action-1191="1191">
-                    <div class="desktop-cta__title">
-               
-                      Adicionar ao carrinho
+                              <div>  <div><div>
+                                <a href="carrinho.html">
+                  <button class="button button1">Adicionar ao carrinho</button>
+                </a>  
+                </div>
+                  </div>
+                  </div>
+                  
+            
+                            <div id="ember948" class="__shared-presentation__cta-wishlist-button__b652e ember-view">
+                    <div class="wishlist-button__icon">
+                        <i aria-hidden="true" id="ember959" class="fa fa-heart-o ember-view"></i>
                     </div>
-                  </button>
+                    
+                
                   </div>
-                  </div>
-                  </div>
-                  </div>
-                          <div class="content-rating">
-                              <img src="https://cdn-a.sonyentertainmentnetwork.com/grc/images/ratings/hd/djctq/16.png" class="content-rating__rating-img">
-                            <div class="content-rating__descriptors">
-                              <ul class="content-rating__descriptors--list">
-                             </ul>
-                           </div>
-                          </div>
+                
+                            
+                            
+                        </div>
+                        <div class="content-rating">
+                            <img src="https://cdn-a.sonyentertainmentnetwork.com/grc/images/ratings/hd/classind/18.png" class="content-rating__rating-img">
+                          <div class="content-rating__descriptors">
+                            <ul class="content-rating__descriptors--list">
+                                <li class="content-rating__descriptors-name">Atos Criminosos</li>
+                                <br>
+                                <li class="content-rating__descriptors-name">Violência</li>
+                                
+                              
+                            </ul>
+                <!---->          </div>
+                        </div>
+                         
                           <div class="tech-specs">
                             <div class="tech-specs__header">Detalhes</div>
                             <div class="tech-specs__pivot-menus">
@@ -119,13 +137,16 @@
                                   Gênero
                                 </div>
                                 <ul>
-                                  <li class="tech-specs__menu-items" style="direction:ltr">Terror</li>
+                                  <li class="tech-specs__menu-items" style="direction:ltr">Ação</li>
                                 </ul>
+                                <ul>
+                                    <li class="tech-specs__menu-items" style="direction:ltr">Aventura</li>
+                                  </ul>
                                <div class="tech-specs__menu-header">
                                   Tamanho do arquivo
                                 </div>
                                 <div class="tech-specs__menu-items">
-                                  23.22 GB
+                                    89.19 GB
                                 </div>
                   
                               <div id="ember969" class="__desktop-presentation__product-detail__details-list__23fd5 ember-view"><!----></div>
@@ -137,26 +158,22 @@
                       </div>
                     </section>
                    
-                  </section>
+                 
                 </div>
                 <section id="descrip">
                     <div class="pdp__description">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <h4>Descrição</h4>
                 
                
-                        <p style="direction:ltr">Um vírus maligno toma conta dos residentes de Raccoon City em setembro de 1998, afundando a cidade no caos enquanto zumbis comedores de carne humana vagam pelas ruas em busca de sobreviventes.
-                          <br>
-                          <br>
-                          Um surto de adrenalina sem comparação, uma história instigante e horrores inimagináveis o aguardam.
-                          <br>
-                          <br>
-                          Presencie o retorno de Resident Evil 2.
-                          <br>
-                          <br>
-                          O jogo contém compras no jogo
-                          <br>
-                          <br>
-                          ©CAPCOM CO., LTD. 1998, 2019 ALL RIGHTS RESERVED.</p>
+                        
+                          <p>
+                         Metro Exodus es un juego de disparos en primera persona centrado en la narrativa y desarrollado por 4A Games. Combina el combate letal y el subterfugio con la exploración, el horror y la supervivencia en uno de los mundos más inmersivos de la historia de los juegos.
+                        </p>
+                    
+                         
+                          
                         <p style="direction:ltr"></p>
                 
                     </div>
@@ -212,9 +229,10 @@
                                 <a href="#" title="Facebook"> 
                                 <img src="https://image.flaticon.com/icons/svg/733/733547.svg" width="15%" height="15%">
                                 </a> 
-                                </a>   <a href="#" title="YouTube" class="snei-social-youtube" target="_blank"> 
+                                   <a href="#" title="YouTube" class="snei-social-youtube" target="_blank"> 
                                 <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-8.png" width="30%" height="15%"></a>  </div>  </div>
                             </section>
                         </footer>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </body>
 </html>

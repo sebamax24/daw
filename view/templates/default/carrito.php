@@ -14,8 +14,7 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href=”#”>Subscripción Premium</a></li>
-                <li><a href=”#”>Ofertas Semanales</a></li>
+               <li><a href="<?php echo $this->base_url ?>biblioteca">Biblioteca</a></li>
 				
 				<form action="" class="search">
 	<input id="submit" value="" type="submit">

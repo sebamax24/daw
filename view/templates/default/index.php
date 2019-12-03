@@ -4,7 +4,7 @@
     <div class="juegos">
         <div class="juego">
             <div>
-                    <a href="juego2.html">
+                    <a href="<?php echo $this->base_url ?>Juego2">
                 <img href="#" src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/18/UP1004-CUSA03041_00-REDEMPTION000002/1561947428000/image?w=124&amp;h=124&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000">
                         </a>
             </div>
@@ -28,7 +28,7 @@
     <div class="juegos">
         <div class="juego">
             <div>
-                <a href="juego.html">
+                <a href="<?php echo $this->base_url ?>Juego">
                 <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP0102-CUSA09193_00-BH2R000000000001/1565050627000/image?w=124&amp;h=124&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" >
             </a>
             </div>
@@ -54,9 +54,10 @@
     <div class="juegos">
         <div class="juego">
             <div>
-                
+                <a href="<?php echo $this->base_url ?>Juego3">
                 <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP9000-CUSA08966_00-DAYSGONEDGDELUXE/1565108023000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
-            </div>
+                </a>
+                    </div>
             
         </div>
             <div class="body">
@@ -77,8 +78,10 @@
     <div class="juegos">
         <div class="juego">
             <div>
-                
+                <a href="<?php echo $this->base_url ?>Juego4">
                 <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP2047-CUSA11408_00-METROEXODUSDELUX/1565053365000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
+           
+                </a>
             </div>
             
         </div>
@@ -100,8 +103,9 @@
     <div class="juegos">
         <div class="juego">
             <div>
-                
+                <a href="<?php echo $this->base_url ?>Juego5">
                 <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP9000-CUSA07408_00-00000000GODOFWAR/1560819816000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
+                </a>
             </div>
             
         </div>

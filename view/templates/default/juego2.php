@@ -12,7 +12,7 @@
     <header>
         <nav id="menu">
             <ul>
-               <li><a href=”#”>Subscripción Premium</a></li>
+               <li><a href="<?php echo $this->base_url ?>index">Inicio</a></li>
                 <li><a href=”#”>Ofertas Semanales</a></li>
 				<li id="ini"><a href="<?php echo $this->base_url ?>Admin">Iniciar Sesión</a></li>
 				<li> <a href="<?php echo $this->base_url ?>carrito"><i class='icon-shopping-cart'></i></a></li>

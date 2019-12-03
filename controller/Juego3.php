@@ -1,5 +1,5 @@
 <?php
-class Carrito extends Controller{
+class Juego3 extends Controller{
 
 
 
@@ -10,13 +10,13 @@ class Carrito extends Controller{
     }
 
       public function index(){
-        $this->carrito();
+        $this->juego3();
     }
 
-    public function carrito() {
-        $this->view->load('carrito');
-
-    
+    public function juego3() {
+        
+ 
+    $this->view->load('juego3');
   
     
         }}

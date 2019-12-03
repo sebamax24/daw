@@ -13,11 +13,10 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href=”#”>Subscripción Premium</a></li>
-                <li><a href=”#”>Ofertas Semanales</a></li>
+               <li><a href="<?php echo $this->base_url ?>biblioteca">Biblioteca</a></li>
 				<li id="ini"><a href="<?php echo $this->base_url ?>Admin">Iniciar Sesión</a></li>
 				<li> <a href="<?php echo $this->base_url ?>carrito"><i class='icon-shopping-cart'></i></a></li>
-                <li><a href=cadastro.html>Cadastrarse</a></li>
+               <li><a href="<?php echo $this->base_url ?>cadastro">Cadastrarse</a></li>
 				<form action="" class="search">
 	<input id="submit" value="" type="submit">
 	<label for="submit" class="submit"></label>
