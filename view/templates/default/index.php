@@ -24,105 +24,41 @@
             </div>
     </div>
    </section>
-    <section id="imagen2">
+ <?php 
+    $i=2;
+    foreach($data['juezgo'] as $joj):?>    
+    <section id="imagen<?php echo $i; ?>">
     <div class="juegos">
         <div class="juego">
+              
             <div>
-                <a href="<?php echo $this->base_url ?>Juego">
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP0102-CUSA09193_00-BH2R000000000001/1565050627000/image?w=124&amp;h=124&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" >
+                <a href="<?php echo $this->base_url ?>Juego/ViewJuego/<?php echo $joj->getId_juego();?>">
+                <img src="<?php echo $this->base_url."view/templates/default/img/".$joj->getImg();?>" width="124" height="124">
             </a>
             </div>
             
         </div>
             <div class="body">
                 <div  class="title ">
-                    <span>Resident Evil 2 Remake</span>
+                    <span><?php echo $joj->getNombre();?></span>
                 </div>
                 <div class="precio">
 
                     Jogo completo
                     PS4
                     <span>
-                        <h3>R$248,99</h3>
+                        <h3>R$<?php echo $joj->getPrecio();?></h3>
                     </span>
                 </div>
             </div>
 
     </div>
    </section>
-    <section id="imagen3">
-    <div class="juegos">
-        <div class="juego">
-            <div>
-                <a href="<?php echo $this->base_url ?>Juego3">
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP9000-CUSA08966_00-DAYSGONEDGDELUXE/1565108023000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
-                </a>
-                    </div>
-            
-        </div>
-            <div class="body">
-                <div  class="title ">
-                    <span>Days Gone: Digital Deluxe Edition</span>
-                </div>
-                <div class="precio">
-                    Jogo completo
-                    PS4
-                    <span>
-                        <h3>R$249,90</h3>
-                    </span>
-                </div>
-            </div>
-    </div>
-   </section>
-    <section id="imagen4">
-    <div class="juegos">
-        <div class="juego">
-            <div>
-                <a href="<?php echo $this->base_url ?>Juego4">
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP2047-CUSA11408_00-METROEXODUSDELUX/1565053365000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
-           
-                </a>
-            </div>
-            
-        </div>
-            <div class="body">
-                <div  class="title ">
-                    <span>Metro Exodus: Gold Edition</span>
-                </div>
-                <div class="precio">
-                    Jogo completo
-                    PS4
-                    <span>
-                        <h3>R$325,90</h3>
-                    </span>
-                </div>
-            </div>
-    </div>
-   </section>    
-    <section id="imagen5">
-    <div class="juegos">
-        <div class="juego">
-            <div>
-                <a href="<?php echo $this->base_url ?>Juego5">
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP9000-CUSA07408_00-00000000GODOFWAR/1560819816000/image?w=124&h=124&bg_color=000000&opacity=100&_version=00_09_000" >
-                </a>
-            </div>
-            
-        </div>
-            <div class="body">
-                <div  class="title ">
-                    <span>God of War</span>
-                </div>
-                <div class="precio">
-                    Jogo completo
-                    PS4
-                    <span>
-                        <h3>R$143,50</h3>
-                    </span>
-                </div>
-            </div>
-    </div>
-   </section>     
+
+
+<?php $i++; endforeach;?>
+
+   
 
     
     

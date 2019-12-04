@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-11-2019 a las 00:52:42
+-- Tiempo de generación: 04-12-2019 a las 05:43:56
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -25,6 +25,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `carrito`
+--
+
+CREATE TABLE `carrito` (
+  `id` int(11) NOT NULL,
+  `id_juego` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `precio` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `juego`
 --
 
@@ -41,7 +54,12 @@ CREATE TABLE `juego` (
 --
 
 INSERT INTO `juego` (`id`, `precio`, `descripcion`, `nombre`, `img`) VALUES
-(4, 72, 'sadsad', 'death stranding', 'death_stranding_1_0.jpg');
+(4, 72, 'sadsad', 'death stranding', 'death_stranding_1_0.jpg'),
+(5, 123213, 'asdasd', 'dsadsada', 'sasukeagiota.jpg'),
+(6, 123, 'asd', 'asdas', 'player.png'),
+(7, 1231, 'asdasd', 'dsada', 'Penguins.jpg'),
+(8, 123123, 'sdad', 'seba', 'summer.png'),
+(9, 1231240, 'das', 'asdsa', 'Tulips.jpg');
 
 -- --------------------------------------------------------
 
@@ -88,6 +106,14 @@ INSERT INTO `usuario` (`id`, `login`, `senha`, `tipo`, `img`) VALUES
 --
 
 --
+-- Indices de la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_usuario` (`id_usuario`),
+  ADD KEY `id_pedido` (`id_juego`);
+
+--
 -- Indices de la tabla `juego`
 --
 ALTER TABLE `juego`
@@ -110,10 +136,16 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `juego`
 --
 ALTER TABLE `juego`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta`
@@ -125,7 +157,18 @@ ALTER TABLE `oferta`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  ADD CONSTRAINT `carrito_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`),
+  ADD CONSTRAINT `carrito_ibfk_2` FOREIGN KEY (`id_juego`) REFERENCES `juego` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

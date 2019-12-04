@@ -1,3 +1,4 @@
+<?php $joj = $data['juegosus'];?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -29,7 +30,7 @@
         </nav>
     </header>
     <section id="titulooo">
-    <h2 class="pdp__title" style="direction:ltr">RESIDENT EVIL 2</h2>
+    <h2 class="pdp__title" style="direction:ltr"><?php echo $joj->getNombre();?></h2>
     <div class="provider-info">
         <h5 class="provider-info__text" style="direction:ltr">Capcom U.S.A., Inc.</h5>
       <h5 class="provider-info__text">
@@ -49,6 +50,7 @@
               <div class="provider-info__rating-count">
                 6497 Classificações
               </div>
+                </div>
             </span>
       </h5>
       <hr>
@@ -59,6 +61,7 @@
     </div>
   </section>
     <div id="fondo">
+        /*
     <section class="slider">
       <div class="w3-content w3-display-container" style="max-width:800px">
           <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re1.jpg">
@@ -67,7 +70,7 @@
           <img class="mySlides w3-animate-right" width="135%" height="400px" src="<?php echo $this->asset; ?>assets/re4.jpg">
    
      
-    </div>
+  //  </div>
   
           
          
@@ -78,7 +81,7 @@
     <div class="large-3">
             <div class="pdp__thumbnail-img">
             <div>
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/999/UP0102-CUSA09193_00-BH2R000000000001/1566433618000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000" >
+                <img src="<?php echo $this->base_url."view/templates/default/img/".$joj->getImg();?>" width="240" height="240" >
                   </div>
                   
                   <div class="product-image__discount-badge">
@@ -88,14 +91,15 @@
                         </div>
                         <div class="sku-info">
                           <div class="sku-info__price-display">
-                            <div id="ember937" class="__shared-presentation__price-display__900cc __shared-presentation__price-display__900cc--full-size ember-view"><!---->    <h3 class="price-display__price">R$249,99</h3>
+                            <div id="ember937" class="__shared-presentation__price-display__900cc __shared-presentation__price-display__900cc--full-size ember-view"><!---->    <h3 class="price-display__price">R$<?php echo $joj->getPrecio();?></h3>
                     </div>
                          
                             
-                  
                 
                               <div id="ember1172" class="ember-view">  <div id="ember1181" class="ember-view"><div id="ember1190" class="__shared-presentation__cta-games__base__950b4 ember-view"><!---->
-                  <button data-fastboot-event-queue="add-to-cart" class="button expanded desktop-cta desktop-cta--add-to-cart desktop-cta--vertical-stack" data-ember-action="" data-ember-action-1191="1191">
+                  <button class="button expanded desktop-cta desktop-cta--add-to-cart desktop-cta--vertical-stack">
+                      
+                      <!--<a href="<?php // echo $this->base_url ?>Juego/addToCarrito <?php //echo $joj?>"></a> -->
                     <div class="desktop-cta__title">
                
                       Adicionar ao carrinho
@@ -137,27 +141,14 @@
                       </div>
                     </section>
                    
-                  </section>
+                
                 </div>
                 <section id="descrip">
                     <div class="pdp__description">
                         <h4>Descrição</h4>
                 
                
-                        <p style="direction:ltr">Um vírus maligno toma conta dos residentes de Raccoon City em setembro de 1998, afundando a cidade no caos enquanto zumbis comedores de carne humana vagam pelas ruas em busca de sobreviventes.
-                          <br>
-                          <br>
-                          Um surto de adrenalina sem comparação, uma história instigante e horrores inimagináveis o aguardam.
-                          <br>
-                          <br>
-                          Presencie o retorno de Resident Evil 2.
-                          <br>
-                          <br>
-                          O jogo contém compras no jogo
-                          <br>
-                          <br>
-                          ©CAPCOM CO., LTD. 1998, 2019 ALL RIGHTS RESERVED.</p>
-                        <p style="direction:ltr"></p>
+                        <p style="direction:ltr"><?php echo $joj->getDescripcion();?></p>
                 
                     </div>
                 </section>
@@ -212,9 +203,10 @@
                                 <a href="#" title="Facebook"> 
                                 <img src="https://image.flaticon.com/icons/svg/733/733547.svg" width="15%" height="15%">
                                 </a> 
-                                </a>   <a href="#" title="YouTube" class="snei-social-youtube" target="_blank"> 
+                                   <a href="#" title="YouTube" class="snei-social-youtube" target="_blank"> 
                                 <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-8.png" width="30%" height="15%"></a>  </div>  </div>
                             </section>
                         </footer>
+
 </body>
 </html>
